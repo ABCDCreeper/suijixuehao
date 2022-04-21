@@ -29,7 +29,7 @@ class main(QWidget):
                 f.write("[config]\n")
         config.read(configpath, encoding='GB18030')
 
-        print(config.options('config'))
+
 
 
 def onAbout():
