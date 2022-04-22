@@ -27,7 +27,12 @@ class main(QWidget):
             open(configpath, 'w')
             with open(configpath, "w") as f:
                 f.write("[config]\n")
-        config.read(configpath, encoding='GB18030')
+                f.close()
+        print(configpath)
+
+        print(config.read(configpath, encoding='utf-8'))
+        items = config.items('config')
+        print(items)
 
 
 

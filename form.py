@@ -74,6 +74,7 @@ class Ui_randxuehao(object):
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(randxuehao)
         #self.save.clicked.connect(onSave)
+        self.tabWidget.indexOf(self.tab)
         self.about.clicked.connect(onAbout)
         self.sc.clicked.connect(self.renshum)
 
