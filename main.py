@@ -19,20 +19,6 @@ class main(QWidget):
         config = configparser.ConfigParser()
         #Ui_randxuehao.setupUi.sc.clicked.connect(onClickButton)
         apply_stylesheet(app, theme='light_blue.xml')
-        _getenv=os.getenv('APPDATA')
-        configpath=_getenv+'\\suijixuehao\\' + 'config' + '.ini'
-        configfolder=_getenv+'\\suijixuehao'
-        if not os.path.exists(configfolder):
-            os.makedirs(configfolder)
-            open(configpath, 'w')
-            with open(configpath, "w") as f:
-                f.write("[config]\n")
-                f.close()
-        print(configpath)
-
-        print(config.read(configpath, encoding='utf-8'))
-        items = config.items('config')
-        print(items)
 
 
 
